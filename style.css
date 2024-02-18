@@ -6,7 +6,8 @@ body{
 }
 
 :root {
-    --main_color:1513EB
+    --main_color:#D04848;
+
     
 }
 .carousel-item {
@@ -18,3 +19,37 @@ body{
     -o-background-size: cover;
     background-size: cover;
   }
+  
+  .tx-color{
+    color: var(--main_color);
+  }
+
+  .bg-color{
+    background-color: var(--main_color);
+  }
+
+  .border-main{
+    border:2px solid var(--main_color);
+   
+  }
+
+  .nav-hover{
+   
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-hover::before{
+    position:absolute;
+    transition: 0.2s;
+    content: "";
+    width: 100%;
+    height:8% ;
+    bottom:  -10%;
+    left: 0;
+    background-color: #D04848;
+    
+ }
+.nav-hover:hover::before{
+    bottom: 0%;
+}
