@@ -53,3 +53,16 @@ body{
 .nav-hover:hover::before{
     bottom: 0%;
 }
+
+.navbar-toggler{
+  box-shadow: none !important;
+}
+
+
+
+.bg-image {
+  background-image: url('./asset/mission2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

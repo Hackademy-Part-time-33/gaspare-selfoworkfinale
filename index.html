@@ -10,28 +10,29 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class=" navbar navbar-expand-md  bg-withe mx-md-3 p-md-2  " aria-label="Fourth navbar example ">
+   
+    <nav class=" navbar navbar-expand-md  bg-ligth mx-md-3 p-md-2  " aria-label="Fourth navbar example ">
         <div class="container-fluid  ">
             <a class="navbar-brand " href=" ">
                 <img src="./asset/logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars tx-color"></i>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0 fs-4  ">
                     <li class="nav-item nav-hover">
-                    <a class="nav-link tx-color" href="#">Mezzi</a>
+                    <a class="nav-link tx-color" href="#mezzi">Mezzi</a>
                     </li>
                     <li class="nav-item nav-hover">
-                        <a class="nav-link tx-color " href="#">Mission</a>
+                        <a class="nav-link tx-color " href="#mission">Mission</a>
                     </li>
                     <li class="nav-item nav-hover">
-                        <a class="nav-link tx-color" href="#">Ricambi</a>
+                        <a class="nav-link tx-color" href="#ricambi">Ricambi</a>
                     </li>
                     <li class="nav-item nav-hover">
-                        <a class="nav-link tx-color" href="#">Assistenza</a>
+                        <a class="nav-link tx-color" href="#assistenza">Assistenza</a>
                     </li>
                     
                 </ul>
@@ -120,7 +121,7 @@
     
     
     <!-- Sezione mezzi -->
-    <section class="conteiner mt-5 mezzi">
+    <section id="mezzi" class="conteiner mt-5 mezzi">
         <article class="row">
             <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
                 <p class=" fs-1 tx-color text-center">MEZZI</p>
@@ -188,7 +189,7 @@
         </article>
     </section>
     <!-- Sezione ricambi-->
-    <section class="conteiner mt-5 ">
+    <section id="ricambi" class="conteiner mt-5 ">
         <article class="row">
            
             <div class="col-sm-12 col-md-12 col-lg-6 ">
@@ -258,7 +259,7 @@
     </section>
     
     <!-- Mission -->
-    <section class="container-fluid mt-5">
+    <section id="mission" class="container-fluid mt-5">
         <article class="row">
             <div class="col-12">
                 <p class="tx-color fs-1 text-center">
@@ -281,7 +282,7 @@
     </section>
 
     <!-- ASSISTENZA -->
-    <section class="container-fluid mt-5">
+    <section id="assistenza" class="container-fluid mt-5">
         <article class="row">
             <div class="col-12">
                 <p class="tx-color fs-1 text-center">
@@ -298,46 +299,128 @@
 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <img class="img-fluid" src="./asset/undraw_Towing_re_wesa-removebg-preview.png" alt="foto">
+                <img class="img-fluid" src="./asset/assistenza.jpg" alt="foto">
 
             </div>
         </article>
     </section>
     
+    <!-- form -->
+    <div class="container-fluid px-5 my-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+                  <div class="col-sm-6 p-4">
+                    <div class="text-center">
+                      <div class="h3 tx-color">Contattaci</div>
+                      <p class="mb-4  tx-color">lascia i tuoi dati</p>
+                    </div>
+      
+                    <!-- * * * * * * * * * * * * * *
+                // * * SB Forms Contact Form * *
+                // * * * * * * * * * * * * * * *
+      
+                // This form is pre-integrated with SB Forms.
+                // To make this form functional, sign up at
+                // https://startbootstrap.com/solution/contact-forms
+                // to get an API token!
+                -->
+      
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      
+                      <!-- Name Input -->
+                      <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                        <label for="name">Nome</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                      </div>
+      
+                      <!-- Email Input -->
+                      <div class="form-floating mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                        <label for="emailAddress">Inserisci la email</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                      </div>
+      
+                      <!-- Message Input -->
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="message">messaggio</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                      </div>
+      
+                      <!-- Submit success message -->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                          <div class="fw-bolder">Form submission successful!</div>
+                          <p>To activate this form, sign up at</p>
+                          <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                      </div>
+      
+                      <!-- Submit error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+      
+                      <!-- Submit button -->
+                      <div class="d-grid">
+                        <button class="bg-color rounded-0 border-0 p-1 btn-lg disabled text-white fs-5 " id="submitButton" type="submit">Invia</button>
+                      </div>
+                    </form>
+                    <!-- End of contact form -->
+      
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top px-4">
+        <p class="col-md-4 mb-0 text-body-secondary"><img src="./asset/logo.png" alt=""></p>
     
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- footer -->
-    <!-- <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 tx-color">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 tx-color">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 tx-color">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 tx-color">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 tx-color">About</a></li>
         </ul>
-        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-    </footer>
--->
+      </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
 
 
 
