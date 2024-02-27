@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5de7b6e936.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
    
-    <nav class=" navbar navbar-expand-md  bg-ligth mx-md-3 p-md-2  " aria-label="Fourth navbar example ">
+    <nav class=" navbar navbar-expand-md  bg-ligth mx-md-3 p-md-2 fixed-top " aria-label="Fourth navbar example ">
         <div class="container-fluid  ">
             <a class="navbar-brand " href=" ">
                 <img src="./asset/logo.png" alt="">
@@ -41,44 +42,12 @@
                     <i class="fa-regular fa-user"></i>
                 </button>
                 
-                <!-- Modal -->
-                <div class="modal fade" id="Loginmodal" tabindex="-1" aria-labelledby="LoginmodalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content rounded-0">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5 text-danger" id="LoginmodalLabel ">LOGIN</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body ">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label text-danger">Inserisci la tua email</label>
-                                        <input type="email" placeholder="rossi@bianco.com"
-                                        class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label text-danger">Password</label>
-                                        <input type="password" placeholder="*******" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    
-                                    <button type="submit" class="btn btn-danger ">Invia</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <div class="text-danger">
-                                    Se non sei registrato clicca qui
-                                </div>
-                                
-                                <button type="button" class="btn btn-danger">Registrati</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     </nav>
-    <h1 class="text-center tx-color">
+    <h1 class="text-center tx-color mt-5">
         ESCAVATOR ENTERPRISE
     </h1>
     
@@ -123,15 +92,19 @@
     <!-- Sezione mezzi -->
     <section id="mezzi" class="conteiner mt-5 mezzi">
         <article class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 mb-3">
-                <p class=" fs-1 tx-color text-center">MEZZI</p>
+            <div class="  col-sm-12 col-md-12 col-lg-6 mb-3">
+                <p class=" sottotitolo fs-1 tx-color text-center ">MEZZI</p>
+                <!-- <div class="sotto-titolo position-relative d-block mx-auto">
+
+                </div> -->
                 
-                
-                <img class="img-fluid" src="./asset/undraw_factory_dy0a-removebg-preview.png" alt="img fabbrica">
+                <img data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"class="img-fluid" src="./asset/undraw_factory_dy0a-removebg-preview.png" alt="img fabbrica">
                 
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 ">
-                <div class="row m-1 ">
+                <div  class="row m-1 ">
                     <div class="col-sm-12 col-md-6 my-4">
                         <div class="d-block mx-auto card border-main rounded-0 shadow  border-top border-start border-end " style="width: 18rem;">
                             <img src="./asset/escavatori.jpg" class="card-img-top" alt="...">
@@ -252,7 +225,9 @@
                 <p class=" fs-1 tx-color text-center">RICAMBI</p>
                 
                 
-                <img class="img-fluid" src="./asset/ricambi.png" alt="img fabbrica">
+                <img data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"class="img-fluid" src="./asset/ricambi.png" alt="img fabbrica">
                 
             </div>
         </article>
@@ -399,7 +374,42 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 tx-color">About</a></li>
         </ul>
       </footer>
+
+      <!-- modale -->
     
+      <div class="modal fade" id="Loginmodal" tabindex="-1" aria-labelledby="LoginmodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-danger" id="LoginmodalLabel ">LOGIN</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-danger">Inserisci la tua email</label>
+                            <input type="email" placeholder="rossi@bianco.com"
+                            class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label text-danger">Password</label>
+                            <input type="password" placeholder="*******" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger ">Invia</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-danger">
+                        Se non sei registrato clicca qui
+                    </div>
+                    
+                    <button type="button" class="btn btn-danger">Registrati</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
     
@@ -423,7 +433,10 @@
    
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 
 
 

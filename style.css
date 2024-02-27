@@ -3,6 +3,7 @@
 
 body{
     font-family: "Roboto"
+    
 }
 
 :root {
@@ -66,3 +67,19 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
+
+/* .sottotitolo{
+border:;
+ border-bottom: solid 2px var(--main_color);
+  
+} */
+/* .sottotitolo{
+  width: 100%;
+  height: 2px;
+  background-color: #D04848;
+  border-bottom: solid 2px var(--main_color);
+} */
+
+body{overflow-x: hidden;}
