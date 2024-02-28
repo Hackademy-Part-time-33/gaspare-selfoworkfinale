@@ -35,9 +35,11 @@ body{
   }
 
   .nav-hover{
-   
+
+    --bs-nav-link-hover-color:var(--main_color);
     position: relative;
     overflow: hidden;
+    
   }
 
   .nav-hover::before{
@@ -55,6 +57,9 @@ body{
     bottom: 0%;
 }
 
+
+
+
 .navbar-toggler{
   box-shadow: none !important;
 }
@@ -67,6 +72,8 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
 
 
 
